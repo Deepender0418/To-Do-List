@@ -1,0 +1,138 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+input, button {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fafafa;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border-left: 5px solid #5cb85c;
+    transition: background 0.3s ease;
+    overflow: hidden;
+}
+
+li:hover {
+    background: #f1f1f1;
+}
+
+li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #d9534f;
+    transition: color 0.3s ease;
+}
+
+li button:hover {
+    color: #c9302c;
+}
+
+.expired {
+    background-color: #f8d7da !important;
+    border-left-color: #d9534f !important;
+}
+
+.task-name-input
+{
+    width: 100px;
+}
+.task-deadline-input
+{
+    width: 150px;
+}
+
+.task-status {
+    font-weight: bold;
+    color: red;
+    margin-left: 10px;
+}
+
+.task-name,
+.task-name input {
+    flex: 1;
+    color: #333;
+}
+
+.task-name input {
+    width: calc(100% - 10px);
+}
+
+.task-times,
+.task-times input {
+    flex: 1;
+    text-align: right;
+    color: #777;
+    font-size: 14px;
+    box-sizing: border-box;
+    max-width: 100%;
+}
